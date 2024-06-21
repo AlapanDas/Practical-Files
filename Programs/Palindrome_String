@@ -1,0 +1,12 @@
+def palindrome(str):
+    if len(str)==0 or len(str)==1:
+        return True
+    elif str[0]==str[len(str)-1]:
+        return palindrome(str[1:len(str)-1])
+    return False
+    
+str=(input("Enter the String to check"))
+if palindrome(str)==True:
+    print("This String is Palindrome")
+else:
+    print("This String is not a Palindrome")

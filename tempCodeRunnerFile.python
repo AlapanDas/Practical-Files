@@ -1,0 +1,24 @@
+T=int(input())
+A=[]
+B=[]
+res=sum(A)-sum(B)
+for i in range(T):
+    k=1
+    n=int(input())
+    A.append(n)
+    while(n-k>0):
+        B.append(n-k)
+        k+=1
+        B.append(n-k)
+        k+=1
+        A.append(n-k)
+        k+=1
+        A.append(n-k)
+        if n-k==1:
+            if res>0:
+                B.append(1)
+            else:
+                A.append(1)
+    print(res)
+        
+

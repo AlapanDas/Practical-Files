@@ -1,0 +1,19 @@
+def fact(n):
+    if n<=1:
+        return 1
+    else:
+        return (n*fact(n-1))
+
+def check(num,copy,sum=0):
+    if num==0:
+        if sum==copy:
+            print("Krishnamurty No.")
+        else:
+            print("Not a Krishnamurty No.")
+    else:
+        sum+=fact(num%10)
+        check(num//10,copy,sum)
+
+number=int(input("Enter number"))
+copy=number
+check(number,copy,0)

@@ -1,0 +1,11 @@
+def palin(n,tmp):
+    if n==0:
+        return tmp
+    tmp=tmp*10 +(n%10)
+    return palin(n//10,tmp)
+    
+num=int(input("Enter the Number to check "))
+if(palin(num,0)==num):
+    print("This Number is a Palindrome Number")
+else:
+    print("This Number is not a Palindrome Number")

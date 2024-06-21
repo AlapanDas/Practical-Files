@@ -1,0 +1,8 @@
+Variable Name   Description
+ch              stores movie
+ch1             stores city
+ch2             stores hall
+ch3             stores seats
+ch4             stores time slot
+ch5             stores class
+ch66            stores finalization

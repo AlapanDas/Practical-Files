@@ -1,0 +1,10 @@
+def ncr(n,r):
+    if r==0 or r==n:
+        return 1
+    else:
+        return ncr(n-1,r-1)+ncr(n-1,r)
+    
+#__main__
+n=int(input("Enter the value of n"))
+r=int(input("Enter the value of r"))
+print(ncr(n,r))

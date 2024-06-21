@@ -1,0 +1,16 @@
+def bubble_sort(a, i, j, n):
+    if j == n:
+        i = i+1
+        j = 0
+    if i == n:
+        return 
+    if a[i] < a[j]: #ascending order
+        a[i],a[j]=a[j],a[i]
+        bubble_sort(a,i,j+1,n)
+    else:
+        bubble_sort(a,i,j+1,n)
+    return a
+
+a=eval(input("Enter the list to be sorted"))
+a = bubble_sort(a, 0, 0, len(a))
+print(a)

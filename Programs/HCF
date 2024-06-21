@@ -1,0 +1,9 @@
+def find(a,b):
+    if b<=0:
+        return a
+    else:
+        return find(b,a%b)
+
+A=int(input("Enter a"))
+B=int(input("Enter b"))
+print(find(A,B))
